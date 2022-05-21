@@ -1,18 +1,15 @@
-import os
-
-
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
-API_ID = os.environ.get("API_ID")
-API_HASH = os.environ.get("API_HASH")
+BOT_TOKEN = '5319416291:AAEPC0mfMUFTe_YAqzbVaXXgsUmmWkKWAg0'
+API_ID = 17158127
+API_HASH = 'd1a5974070430293b64fde5339591447'
 
 
 # DATOS DEL MOODLE
-USUARIO = os.environ.get("USUARIO")
-PASSWORD = os.environ.get("PASSWORD")
-USUARIO_ID = os.environ.get("USUARIO_ID")
-ZIP_MB = os.environ.get("ZIP_MB")
-MOODLE_URL = os.environ.get("MOODLE_URL")
-OWNER = os.environ.get("OWNER")
+USUARIO = 'dalberto'
+PASSWORD = 'opined-330'
+USUARIO_ID = 5847
+ZIP_MB = 300
+MOODLE_URL = 'https://moodle.uclv.edu.cu'
+ADMIN_USER = 'reymichel2009', 'chacon90'
 
 # CUENTA DE MEGA
 GMAIL_MEGA = 'yanco148@gmail.com'
