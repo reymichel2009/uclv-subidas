@@ -21,10 +21,7 @@
     "PASSWORD": {
       "description": "Contraseña de la moodle",
       "value": ""
-    },
-    "USUARIO_ID": {
-      "description": "id del usuario de la moodle",
-      "value": ""
+  
     },
     "ZIP_MB": {
       "description": "Tamaño de las partes",
