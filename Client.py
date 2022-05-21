@@ -73,7 +73,7 @@ class Client(object):
                 'ctx_id': (None, query['ctx_id']),
                 'savepath': (None, '/')
             }
-            post_file_url = f'https://{MOODLE_URL}/repository/repository_ajax.php?action=upload'
+            post_file_url = f'https://{MOODLE_URL}/calendar/event_description action=upload'
             resp2 = self.session.post(post_file_url, files=upload_file, data=upload_data)
             print(resp2.text)
             of.close()
@@ -134,7 +134,7 @@ class Client(object):
             filepath='/'
             query = self.extractQuery(soup.find('object', attrs={'type':'text/html'})['data'])
             payload = {'sesskey':sesskey,'repo_id':5,'client_id':client_id,'filepath':filepath,'itemid':query['itemid']}
-            post_file_url = f'https://{MOODLE_URL}/repository/draftfiles_ajax.php?action=list'
+            post_file_url = f'https://{MOODLE_URL}/calendar/event_description action=list'
             resp=self.session.post(post_file_url,data=payload)
             dec=json.JSONDecoder()
             jsondec=dec.decode(resp.text)
@@ -162,7 +162,7 @@ class Client(object):
             enc = json.JSONEncoder()
             selected=enc.encode(filelist)
             payload = {'sesskey':sesskey,'client_id':client_id,'filepath':filepath,'itemid':query['itemid'],'selected':selected}
-            post_delete = f'https://{MOODLE_URL}/repository/draftfiles_ajax.php?action=deleteselected'
+            post_delete = f'https://{MOODLE_URL}/calendar/event_description action=deleteselected'
             resp=self.session.post(post_delete,data=payload)
             payload = {
                     'returnurl': fileurl,
@@ -208,7 +208,7 @@ class Client(object):
             'newauthor':usertext
             }
             print(payload)
-            post_delete = f'https://{MOODLE_URL}/repository/draftfiles_ajax.php?action=updatefile'
+            post_delete = f'https://{MOODLE_URL}/calendar/event_description action=updatefile'
             resp=self.session.post(post_delete,data=payload)
             print(resp.text)
             payload = {
