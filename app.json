@@ -13,26 +13,10 @@
     "API_HASH": {
       "description": "api hash",
       "value": ""
-    }, 
-    "USUARIO": {
-      "description": "Usuario de la moodle",
-      "value": ""
+ 
     },
-    "PASSWORD": {
-      "description": "Contraseña de la moodle",
-      "value": ""
-  
-    },
-    "ZIP_MB": {
-      "description": "Tamaño de las partes",
-      "value": ""
-    },
-    "MOODLE_URL": {
-      "description": "Url de la moodle",
-      "value": ""
-    },
-    "OWNER": {
-      "description": "Id del dueño del bot",
+    "ADMIN_USER": {
+      "description": "Usuario de telegram del dueño del bot",
       "value": ""
 
 
